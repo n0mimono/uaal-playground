@@ -21,6 +21,7 @@
 		9545BF2D254C09C500D2E64C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9545BF2C254C09C500D2E64C /* RxRelay */; };
 		9545BF2F254C09C500D2E64C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9545BF2E254C09C500D2E64C /* RxCocoa */; };
 		9545BF31254C09C500D2E64C /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 9545BF30254C09C500D2E64C /* RxBlocking */; };
+		954910A1254FA15D001DA4C0 /* Unity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954910A0254FA15D001DA4C0 /* Unity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		9545BF11254C08AE00D2E64C /* uaalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uaalUITests.swift; sourceTree = "<group>"; };
 		9545BF13254C08AE00D2E64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9545BF22254C095800D2E64C /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityFramework.framework; path = uaal/UnityFramework.framework; sourceTree = "<group>"; };
+		954910A0254FA15D001DA4C0 /* Unity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				9545BEEF254C08AB00D2E64C /* AppDelegate.swift */,
 				9545BEF1254C08AB00D2E64C /* SceneDelegate.swift */,
 				9545BEF3254C08AB00D2E64C /* ViewController.swift */,
+				954910A0254FA15D001DA4C0 /* Unity.swift */,
 				9545BEF5254C08AB00D2E64C /* Main.storyboard */,
 				9545BEF8254C08AD00D2E64C /* Assets.xcassets */,
 				9545BEFA254C08AD00D2E64C /* LaunchScreen.storyboard */,
@@ -298,6 +301,7 @@
 				9545BEF4254C08AB00D2E64C /* ViewController.swift in Sources */,
 				9545BEF0254C08AB00D2E64C /* AppDelegate.swift in Sources */,
 				9545BEF2254C08AB00D2E64C /* SceneDelegate.swift in Sources */,
+				954910A1254FA15D001DA4C0 /* Unity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
