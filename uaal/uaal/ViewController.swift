@@ -79,7 +79,7 @@ class ViewController: UIViewController, Unity {
             .disposed(by: disposeBag)
         current.map {
             let ratio = $0.virtualViewWidth / $0.virtualViewHeight
-            return "\($0.virtualViewHeight.r10())\n\($0.virtualViewWidth.r10())\n\(ratio.r10())"
+            return "\($0.virtualViewHeight.r3())\n\($0.virtualViewWidth.r3())\n\(ratio.r3())"
         }
         .bind(to: controlInfoLabel.rx.text)
         .disposed(by: disposeBag)
@@ -87,7 +87,7 @@ class ViewController: UIViewController, Unity {
 }
 
 extension CGFloat {
-    func r10() -> CGFloat {
-        return (self * 10).rounded() / 10
+    func r3() -> CGFloat {
+        return (self * 1000).rounded() / 1000
     }
 }
