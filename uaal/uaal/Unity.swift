@@ -11,6 +11,10 @@ import UnityFramework
 protocol Unity {}
 
 extension Unity {
+    var unityCanvasSize: CGSize {
+        return CGSize(width: 1125, height: 2436)
+    }
+    
     func canvasScalerReferenceResolution(width: Int, height: Int) {
         // 1125,2436
         sendMessage("CanvasScalerReferenceResolution", args: "\(width),\(height)")
