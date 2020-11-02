@@ -17,7 +17,7 @@ public class NewBehaviourScript1 : MonoBehaviour
     public void CanvasScalerReferenceResolution(string req)
     {
         var rs = req.Split(',');
-        var (x, y) = (int.Parse(rs[0]), int.Parse(rs[1]));
+        var (x, y) = (float.Parse(rs[0]), float.Parse(rs[1]));
 
         var scaler = canvas.GetComponent<CanvasScaler>();
         scaler.referenceResolution = new Vector2(x, y);
@@ -34,7 +34,7 @@ public class NewBehaviourScript1 : MonoBehaviour
     public void PanelSquareWidthAndHeight(string req)
     {
         var rs = req.Split(',');
-        var (x, y) = (int.Parse(rs[0]), int.Parse(rs[1]));
+        var (x, y) = (float.Parse(rs[0]), float.Parse(rs[1]));
 
         panelSquare.sizeDelta = new Vector2(x, y);
     }
@@ -42,7 +42,7 @@ public class NewBehaviourScript1 : MonoBehaviour
     public void PanelXWidthAndHeight(string req)
     {
         var rs = req.Split(',');
-        var (x, y) = (int.Parse(rs[0]), int.Parse(rs[1]));
+        var (x, y) = (float.Parse(rs[0]), float.Parse(rs[1]));
 
         panelX.sizeDelta = new Vector2(x, y);
     }

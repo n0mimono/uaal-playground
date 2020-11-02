@@ -14,8 +14,8 @@ extension Unity {
     var unityCanvasSize: CGSize {
         return CGSize(width: 1125, height: 2436)
     }
-    
-    func canvasScalerReferenceResolution(width: Int, height: Int) {
+
+    func canvasScalerReferenceResolution(width: CGFloat, height: CGFloat) {
         // 1125,2436
         sendMessage("CanvasScalerReferenceResolution", args: "\(width),\(height)")
     }
@@ -24,13 +24,13 @@ extension Unity {
         // 1.0
         sendMessage("CanvasScalerReferenceMatch", args: "\(match)")
     }
-    
-    func panelSquareWidthAndHeight(width: Int, height: Int) {
+
+    func panelSquareWidthAndHeight(width: CGFloat, height: CGFloat) {
         // 2436,2436
         sendMessage("PanelSquareWidthAndHeight", args: "\(width),\(height)")
     }
-    
-    func panelXWidthAndHeight(width: Int, height: Int) {
+
+    func panelXWidthAndHeight(width: CGFloat, height: CGFloat) {
         // 1126,2436
         sendMessage("PanelXWidthAndHeight", args: "\(width),\(height)")
     }
@@ -40,7 +40,7 @@ extension Unity {
 
         ufw.sendMessageToGO(withName: "Cube", functionName: method, message: args)
     }
-    
+
     func addUnityView(to parentView: UIView) {
         guard let ufw = UnityFramework.getInstance() else { return }
         guard let unityView = ufw.appController()?.rootView else { return }
