@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,6 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="C27-aT-ZCn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvJ-xc-RHQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5st-R3-jaf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hb-vs-5q8" userLabel="VirtualView">
                                 <rect key="frame" x="20" y="139" width="374" height="618"/>
                                 <subviews>
@@ -83,9 +94,17 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5Hb-vs-5q8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3N3-6V-MJR"/>
+                            <constraint firstItem="C27-aT-ZCn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4qs-4u-XMj"/>
+                            <constraint firstItem="zvJ-xc-RHQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="79E-df-xty"/>
+                            <constraint firstAttribute="bottom" secondItem="zvJ-xc-RHQ" secondAttribute="bottom" id="7nx-1b-N1m"/>
+                            <constraint firstItem="C27-aT-ZCn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bc5-Ax-UeG"/>
                             <constraint firstItem="OOU-iE-8Ws" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ig5-Ua-dAb"/>
+                            <constraint firstItem="zvJ-xc-RHQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Trw-lo-SBB"/>
+                            <constraint firstItem="C27-aT-ZCn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wgo-Wi-k23"/>
                             <constraint firstItem="5Hb-vs-5q8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iTn-uh-A2O"/>
                             <constraint firstItem="OOU-iE-8Ws" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="mdk-7n-VdB"/>
+                            <constraint firstAttribute="trailing" secondItem="zvJ-xc-RHQ" secondAttribute="trailing" id="nFl-iu-dMh"/>
+                            <constraint firstAttribute="bottom" secondItem="C27-aT-ZCn" secondAttribute="bottom" id="uod-1z-lCL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -104,6 +123,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image" width="1125" height="2436"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
